@@ -1,6 +1,7 @@
 # databaseAPI
 A database API to fetch and insert logs in MYSQL
 
+To run the code, please have all the dependencies installed such as Flask, Datetime, Requests etc.
 
 SERVER:
 To start the server, please run 'python main.py'
@@ -37,4 +38,6 @@ To hit the endpoints, please run these two python files:
  
  1) We choose the 'schema-less' approach owing to the unpredictable structure and behavior of the logs in the future.
  2) The idea to use the JSON column is to incorporate the data from different and unknown sources. Also, the logs could change over time and this allows us to take care of those scenarios as well.
- 3) 
+ 3) We index the 'timestamp' column so as to query the logs faster using a range of timestamps
+ 4) All different queries for other JSON keys can be developed easily but obviously would not be equal in speed as indexing. This is a tradeoff between the speed and incorporating different types of log formats from unknown sources and hence we need to live with it.
+ 
