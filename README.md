@@ -8,6 +8,7 @@ To start the server, please run 'python main.py'
 The server would listen on http://127.0.0.1:5000/ by default.
 
 These are defined API endpoints:
+
 POST: '/insert' 
 Inserts a new log into the database and stores in JSON format.
 
