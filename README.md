@@ -24,7 +24,7 @@ To hit the endpoints, please run these two python files:
               1) Insert a log in JSON format with defined timestamp
               2) Insert a log in JSON format with absent timestamp (In this case, the database uses the then timestamp at insertion
               3) Gets all the logs between two given timestamps
-              
+              4) Inserts a string into the database
  
  - test_2.py : Contains the unit tests:
             1) Inserts all the logs from the file "nginx_json_logs.txt" in the database
