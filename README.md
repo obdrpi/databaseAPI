@@ -41,6 +41,10 @@ To hit the endpoints, please run these two python files:
  3) We index the 'timestamp' column so as to query the logs faster using a range of timestamps
  4) All different queries for other JSON keys can be developed easily but obviously would not be equal in speed as indexing. This is a tradeoff between the speed and incorporating different types of log formats from unknown sources and hence we need to live with it.
  
-There are two .sql files.
+There are two .sql files::
+
+
 LogsDBschema.sql : The schema without data
+
+
 LogsDBschemaWithData.sql : The schema with data
